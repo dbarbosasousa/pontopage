@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <mta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <title>.page - Simula Jornada</title>
+</head>
+<body>
+    <header>
+        <div><img src="pontopage.png" alt="Ponto Page Logo"></div>
+        <!-- <div><h3 style="text-align: center;">Simular Tempo de Jornada de Trabalho</h3></div> -->
+    </header>
+    <main>
+        <div class="maincontainer">
+            <div id="box">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                        <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                      </svg>
+                    <strong style="font-size: medium;">Jornada Pretendida</strong>
+                    <br>
+                </div>
+                <form action="">
+                    <div class="left"><input type="radio" name="jornadapretendida" id="6" value=6 class="form-check-input mt-0"> 6H (+15min)</div>
+                    <div class="left"><input type="radio" name="jornadapretendida" id="8" value=8 class="form-check-input mt-0"> 8H</div>
+                    <div class="left"><input type="radio" name="jornadapretendida" id="outra" value="outra" class="form-check-input mt-0"> Outra</div>
+                    <div id="input">
+                       <div>Hora</div>
+                       <div>Minuto</div>
+                   </div>
+                    <div id="input">
+                        <input class="hora_pretendida" type="number" size="2" maxlength="2" max="23" min="0">
+                        :
+                        <input class="minuto_pretendida" type="number" size="2" maxlength="2" max="59" min="0">
+                    </div>
+                </form>
+            </div>
+            <div id="box">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+                      </svg>
+                    <strong style="font-size: medium;">Primeira Jornada</strong>
+                    <br>
+                </div>
+                <div><strong>Entrada</strong></div>
+                <div id="input">
+                   <div>Hora</div>
+                   <div>Minuto</div>
+               </div>
+                <div id="input">
+                    <input class="hora_entra_1" type="number" size="2" maxlength="2" max="23" min="0">
+                    :
+                    <input class="minuto_entra_1" type="number" size="2" maxlength="2" max="59" min="0">
+                </div>
+                <div><strong>Saída</strong></div>
+                <div id="input">
+                   <div>Hora</div>
+                   <div>Minuto</div>
+               </div>
+                <div id="input">
+                   <input class="hora_sai_1" type="number" size="2" maxlength="2" max="23" min="0">
+                    :
+                    <input class="minuto_sai_1" type="number" size="2" maxlength="2" max="59" min="0">
+                </div>
+            </div>
+            <div id="box">
+                <div>
+                    <strong style="font-size: medium;">Segunda Jornada</strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+                      </svg>
+                    <br>
+                </div>
+                <div><strong>Entrada</strong></div>
+                <div id="input">
+                   <div>Hora</div>
+                   <div>Minuto</div>
+               </div>
+                <div id="input">
+                    <input class="hora_entra_2" type="number" size="2" maxlength="2" max="23" min="0">
+                    :
+                    <input class="minuto_entra_2" type="number" size="2" maxlength="2" max="59" min="0">
+                </div>
+                <div><strong>Saída</strong></div>
+                <div id="input">
+                   <div>Hora</div>
+                   <div>Minuto</div>
+               </div>
+                <div id="input">
+                    <input class="hora_sai_2" type="number" size="2" maxlength="2" max="23" min="0">
+                    :
+                    <input class="minuto_sai_2" type="number" size="2" maxlength="2" max="59" min="0">
+                </div>
+            </div>
+            <div id="comandobox">
+                <br>
+                <input type="button" value="Calcular Jornada" id="calcular" class="btn btn-primary" style="font-size: small;" >
+                <br>
+                <input type="button" value="Zerar Dados" id="limpar" class="btn btn-primary" style="font-size: small;">
+            </div>
+            <div id="detalhes">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                      </svg>
+                    <strong style="font-size: medium;">Detalhes da Jornada</strong>
+                    <br>
+                </div>
+                <div class="left_space_between">Primeira Jornada:<div id="showjornada1"></div></div>
+                <div class="left_space_between">Segunda Jornada:<div id="showjornada2"></div></div>
+                <div class="left_space_between">Intervalo:<div id="intervalo"></div></div>
+                <div class="left_space_between">Total Jornada:<div id="totaljornada"></div></div>
+                <div class="left_space_between">Diferença na Jornada:<div id="dif_jornada"></div></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="box">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                <strong style="font-size: medium;">Observações da Jornada</strong><br>
+            </div>
+            <div class="left" id="obs1"></div> <!-- sobre a primeira jornada -->
+            <div class="left" id="obs2"></div> <!-- sobre a segunda jornada -->
+            <div class="left" id="obs3"></div> <!-- sobre o total da jornada -->
+            <div class="left" id="alerta1"></div> <!-- alerta sobre o intervalo -->
+            <div class="left" id="alerta2"></div> <!-- alerta sobre a primeira jornada -->
+            <div class="left" id="alerta3"></div> <!-- alerta diferença de jornada -->
+            <div class="left" id="show"></div> <!-- observações -->
+        </div>
+        <div id="testes">
+        </div>
+    </footer>
+    <div class="box" style="font-size: smaller;">
+        Página desenvolvida para simular jornada de trabalho, ajudar em regularizações de ponto, cálculos de 
+        horas extras; necessidades rotineiras no meu trabalho bancário, que inspiraram a criação da página.
+        Aproveite!
+    </div>
+    <div class="box" style="font-size: smaller; text-align: center;">
+        Desenvolvedor: Daniel Barbosa de Sousa - dbarbosasousa@gmail.com
+    </div>
+    <script src="js/funcoes.js">
+        calcula_tempo_trabalhado
+    </script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
